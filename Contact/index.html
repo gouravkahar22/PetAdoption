@@ -1,1 +1,27 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Enter Your Details</h2>
+        <input type="text" id="fullName" placeholder="Full Name" required>
+        <input type="text" id="mobileNumber" placeholder="Mobile Number" required>
+        <input type="text" id="address" placeholder="Address" required>
+        <input type="email" id="gmail" placeholder="Gmail" required>
+        <button onclick="displayCard()">Submit</button>
+      </div>
+    
+      <div class="card" id="userCard" style="display: none;">
+        <h2 class="card-title" id="displayName"></h2>
+        <p><strong>Mobile No:</strong> <span id="displayMobile"></span></p>
+        <p><strong>Address:</strong> <span id="displayAddress"></span></p>
+        <p><strong>Gmail:</strong> <span id="displayGmail"></span></p>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
